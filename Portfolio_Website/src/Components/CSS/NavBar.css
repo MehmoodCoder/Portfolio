@@ -1,50 +1,125 @@
 .NavBarItems {
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(8px);
+    background: rgba(7, 15, 30, 0.8);
+    backdrop-filter: blur(20px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1), 0 4px 12px -2px rgba(0, 0, 0, 0.05);
-    width: 90%;
-    max-width: 1200px;
-    height: 70px;
-    border-radius: 16px;
+    padding: 0 24px;
+    box-shadow: 0 18px 48px rgba(2, 6, 23, 0.45);
+    width: min(92%, 1200px);
+    height: 74px;
+    border-radius: 999px;
     position: fixed;
     top: 20px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     z-index: 50;
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #38bdf8, #6366f1 70%, #a855f7);
+    color: #f8fafc;
+    box-shadow: 0 10px 24px rgba(56, 189, 248, 0.25);
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+}
+
+.brand-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #f8fafc;
+}
+
+.brand-role {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #7dd3fc;
 }
 
 .nav-menu {
     display: flex;
-    gap: 15px;
+    gap: 8px;
     list-style: none;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
-.nav-icon {
-    display: none;
-    width: 46px;
-    height: 46px;
-    border: 0;
+.nav-links {
     border-radius: 999px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.nav-links:hover {
+    transform: translateY(-1px);
+}
+
+.nav-links .link {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.9);
-    color: #171d32;
-    box-shadow: 0 8px 20px rgba(23, 29, 50, 0.12);
+    gap: 0.6rem;
+    border-radius: 999px;
+    padding: 0.72rem 1rem;
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.nav-links .link:hover,
+.nav-links .link:focus-visible {
+    color: #f8fafc;
+    background: rgba(56, 189, 248, 0.16);
+    box-shadow: inset 0 0 0 1px rgba(125, 211, 252, 0.28);
+}
+
+.nav-links .link i {
+    font-size: 0.95rem;
+    color: #7dd3fc;
+}
+
+.nav-icon {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: #ffffff;
+    box-shadow: 0 10px 24px rgba(56, 189, 248, 0.25);
     cursor: pointer;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .nav-icon:hover {
     transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 12px 28px rgba(23, 29, 50, 0.16);
+    box-shadow: 0 14px 28px rgba(56, 189, 248, 0.3);
 }
 
 .nav-icon:active {
@@ -52,13 +127,12 @@
 }
 
 .nav-icon i {
-    font-size: 1.15rem;
+    font-size: 1rem;
     transition: transform 0.3s ease;
 }
 
 .nav-icon.active {
-    background: linear-gradient(135deg, #171d32, #2d3a57);
-    color: #ffffff;
+    background: linear-gradient(135deg, #f59e0b, #fb7185);
 }
 
 .nav-icon.active i {
@@ -67,37 +141,47 @@
 
 @media screen and (max-width: 820px) {
     .NavBarItems {
-        width: 92%;
-        padding: 0 24px;
+        width: 94%;
+        padding: 0 18px;
+        height: 66px;
+    }
+
+    .brand-name {
+        font-size: 0.95rem;
+        letter-spacing: 0.12em;
+    }
+
+    .brand-role {
+        display: none;
     }
 
     .nav-menu {
         display: flex;
         flex-direction: column;
-        background: rgba(255, 255, 255, 0.98);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        border: 1px solid rgba(0, 0, 0, 0.05);
+        background: rgba(2, 6, 23, 0.96);
+        box-shadow: 0 24px 45px rgba(2, 6, 23, 0.36);
+        border: 1px solid rgba(125, 211, 252, 0.16);
         width: 100%;
         position: absolute;
-        top: 85px;
+        top: 78px;
         left: 0;
         right: 0;
         opacity: 0;
-        transform: translateY(-12px) scale(0.98);
+        transform: translateY(-10px);
         visibility: hidden;
         pointer-events: none;
         align-items: center;
-        padding: 20px;
+        padding: 18px 14px;
         margin: 0;
-        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;  /*Glitch*/
-        border-radius: 16px;
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+        border-radius: 22px;
         gap: 8px;
         z-index: 60;
     }
 
     .nav-menu.active {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(0);
         visibility: visible;
         pointer-events: auto;
     }
@@ -112,7 +196,8 @@
 
     .nav-links .link {
         width: 100%;
-        padding: 0.8rem 1rem;
-        border-radius: 12px;
+        padding: 0.9rem 1rem;
+        border-radius: 14px;
+        justify-content: flex-start;
     }
 }

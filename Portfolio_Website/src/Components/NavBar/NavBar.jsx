@@ -1,4 +1,4 @@
-import './CSS/NavBar.css'
+import '../CSS/NavBar.css'
 import { Component } from "react";
 import { Link } from 'react-router-dom'
 import { MenuItems } from "./MenuItems";
@@ -17,9 +17,15 @@ class NavBar extends Component {
     render() {
         return (
             <nav className="NavBarItems">
-                <h3 className="text-2xl font-bold tracking-wider text-[#171d32] cursor-pointer bg-gradient-to-r from-[#171d32] to-[#4a5568] bg-clip-text text-transparent">
-                    Portfolio
-                </h3>
+                <Link to="/" className="brand-link" onClick={this.handleLinkClick}>
+                    <span className="brand-badge">
+                        <i className="fa-solid fa-code"></i>
+                    </span>
+                    <span className="brand-text">
+                        <span className="brand-name">Portfolio</span>
+                        <span className="brand-role">Creative Developer</span>
+                    </span>
+                </Link>
 
                 <button
                     type="button"
@@ -37,9 +43,9 @@ class NavBar extends Component {
                                 <Link
                                     to={item.url}
                                     onClick={this.handleLinkClick}
-                                    className="link flex items-center justify-center gap-2 font-medium text-base transition-all duration-300 ease-in-out hover:bg-[#171d32] hover:text-white rounded-lg px-4 py-2"
+                                    className="link"
                                 >
-                                    <i className={`${item.icon} text-lg`}></i>
+                                    <i className={`${item.icon}`}></i>
                                     <span>{item.title}</span>
                                 </Link>
                             </li>
