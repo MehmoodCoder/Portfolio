@@ -29,7 +29,7 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <NavBar />
+      <NavBar /><br/>
       <section className="px-4 py-20 text-white sm:px-6 sm:py-24 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-8 flex flex-col gap-3 md:mb-10 md:flex-row md:items-end md:justify-between">

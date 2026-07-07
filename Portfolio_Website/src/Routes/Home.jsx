@@ -40,7 +40,7 @@ const skills = [
 const Home = () => {
     return (
         <>
-            <NavBar />
+            <NavBar /><br/>
             <section className="px-4 py-16 text-white sm:px-6 sm:py-20 lg:px-8 lg:py-24 xl:px-16">
                 <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-10 lg:flex-row lg:gap-16">
                     <div className="w-full max-w-2xl text-center lg:text-left">

@@ -10,7 +10,7 @@ const expertise = [
 const About = () => {
   return (
     <>
-      <NavBar />
+      <NavBar /><br/>
       <section className="px-6 py-24 text-white sm:px-8 lg:px-16">
         <div className="mx-auto grid max-w-7xl gap-10 rounded-[32px] border border-white/10 bg-slate-900/40 p-6 shadow-2xl shadow-black/20 backdrop-blur-lg lg:grid-cols-[0.9fr_1.1fr] lg:p-10">
           

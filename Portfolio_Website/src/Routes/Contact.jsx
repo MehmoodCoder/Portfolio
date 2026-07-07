@@ -58,7 +58,7 @@ function Contact() {
 
     return (
         <>
-            <NavBar />
+            <NavBar /><br/>
             <section className="px-4 py-16 text-white sm:px-6 sm:py-20 lg:px-8 lg:py-24 xl:px-16">
                 <div className="mx-auto grid max-w-7xl gap-5 rounded-[32px] border border-white/10 bg-slate-950/40 p-2 shadow-[0_30px_90px_rgba(2,6,23,0.5)] backdrop-blur-2xl sm:gap-6 sm:p-3 md:gap-8 md:p-4 lg:grid-cols-[0.92fr_1.08fr] lg:p-8">
                     <div className="relative overflow-hidden rounded-[28px] border border-cyan-400/20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 p-5 sm:p-6 lg:p-8 flex flex-col justify-between gap-6">
