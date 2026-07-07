@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import NavBar from "../Components/NavBar/NavBar";
 import Footer from "../Components/Footer/Footer";
+import TypingEffect from "../Components/Effect/TypingEffect"; 
 
 const highlights = [
     { title: "Responsive UI", icon: "fa-solid fa-mobile-screen-button", text: "Beautiful layouts that adapt smoothly from phone to desktop." },
@@ -48,8 +49,8 @@ const Home = () => {
                             Available for exciting web projects
                         </div>
 
-                        <h1 className="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-                            Hello, I&apos;m <span className="bg-gradient-to-r from-[#8fb8ff] via-[#7c9cff] to-[#93f7d2] bg-clip-text text-transparent">Mehmood Hassan</span>
+                        <h1 className="text-2xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl min-h-[120px] sm:min-h-[auto]">
+                            Hello, I&apos;m<br/> <TypingEffect />
                         </h1>
 
                         <p className="mt-5 text-lg leading-8 text-slate-300 sm:text-xl">

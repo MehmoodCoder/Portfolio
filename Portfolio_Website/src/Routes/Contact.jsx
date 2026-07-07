@@ -6,7 +6,6 @@ const socials = [
     { label: "Email", value: "mehmood.mh56@gmail.com", icon: "fa-solid fa-envelope", href: "mailto:mehmood.mh56@gmail.com?subject=Portfolio%20Contact" },
     { label: "LinkedIn", value: "linkedin.com/in/mehmood-hassan-7604a03b1", icon: "fa-brands fa-linkedin", href: "https://www.linkedin.com/in/mehmood-hassan-7604a03b1" },
     { label: "GitHub", value: "github.com/MehmoodCoder", icon: "fa-brands fa-github", href: "https://github.com/MehmoodCoder" },
-    { label: "X", value: "x.com/MehmoodHassan56", icon: "fa-brands fa-x-twitter", href: "https://x.com/MehmoodHassan56" }
 ];
 
 const buildMailtoLink = (name, email, subject, message) => {
@@ -72,12 +71,12 @@ function Contact() {
                                 Whether it&apos;s a launch, a redesign, or a bold new idea, I&apos;m ready to bring it to life with thoughtful design and polished execution.
                             </p>
 
-                            <div className="mt-6 grid gap-4 w-full sm:grid-cols-2">
+                            <div className="mt-6 grid gap-4 w-full sm:grid-cols-1">
                                 {socials.map((item) => (
                                     <a
                                         key={item.label}
                                         href={item.href}
-                                        target={item.label === "Email" ? "_self" : "_blank"}
+                                        target= "_blank"
                                         rel="noreferrer"
                                         className="group flex items-center gap-4 rounded-[20px] border border-white/10 bg-slate-900/70 p-4 text-sm text-slate-200 shadow-[0_10px_30px_rgba(2,6,23,0.18)] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-slate-800/80 active:scale-[0.99] w-full min-w-0"
                                     >
