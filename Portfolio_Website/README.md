@@ -10,13 +10,13 @@ This project demonstrates a modern developer landing page with:
 - Contact form that opens an email draft using `mailto:`
 - Smooth visual style with dark theme and gradient accents
 
---
+---
 
 ## Open in browser
 
 - 🌐 Portfolio: [Portfolio Link](https://mh56-portfolio.vercel.app)
 
---
+---
 
 ## Project structure
 
@@ -80,7 +80,7 @@ This project demonstrates a modern developer landing page with:
 - Font Awesome icons
 - Oxlint for linting
 
---
+---
 
 ## 🛠️ Tech Stack
 * **Framework:** React.js (Vite Template), React Router
@@ -88,20 +88,19 @@ This project demonstrates a modern developer landing page with:
 * **Language:** JavaScript (ES6+), HTML, CSS
 * **Hosting:** Vercel
 
---
+---
 
 ## Notes
 
 - The contact form uses `mailto:` to open the default email client.
 - Project cards include placeholder demo/code links that can be updated with real URLs.
 
---
+---
 
 ## Contact
 
 For questions or updates, connect via the links shown in the portfolio site, including Email, GitHub and LinkedIn.
 
---
 
 ---
 
