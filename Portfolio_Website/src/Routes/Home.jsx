@@ -49,7 +49,7 @@ const Home = () => {
                             Available for exciting web projects
                         </div>
 
-                        <h1 className="text-2xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl min-h-[120px] sm:min-h-[auto]">
+                        <h1 className="text-3xl font-black leading-tight tracking-tight text-white sm:text-6xl lg:text-6xl min-h-[120px] sm:min-h-[auto]">
                             Hello, I&apos;m<br/> <TypingEffect />
                         </h1>
 
