@@ -12,7 +12,7 @@ const Footer = () => {
             { 
               label: "Instagram", 
               icon: "fa-brands fa-instagram", 
-              href: "https://www.instagram.com/_mehmood_mh56",
+              href: "https://www.instagram.com/mehmood_mh56",
               iconColor: "text-[#e1306c] group-hover:text-white",
               hoverClasses: "hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white hover:border-transparent"
             },
